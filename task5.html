@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  table {
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    width: calc(100% - 12px);
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div>
+    <h2 style="text-align: center;">Registration Form</h2>
+
+    <form action="/submit_registration" method="post">
+      <table>
+        <tr>
+          <td><label for="first_name">First Name:</label></td>
+          <td><input type="text" id="first_name" name="first_name"></td>
+        </tr>
+        <tr>
+          <td><label for="last_name">Last Name:</label></td>
+          <td><input type="text" id="last_name" name="last_name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td><label for="confirm_password">Confirm Password:</label></td>
+          <td><input type="password" id="confirm_password" name="confirm_password"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" id="state" name="state"></td>
+          </tr>
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td><select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="australia">India</option>
+            <!-- Add more options as needed -->
+          </select></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="language">Languages known:</label>
+            </td>
+            <td>
+                <input type="checkbox">
+                <label for="english">English</label>
+                <input type="checkbox">
+                <label for="kannada">Kannada</label>
+                <input type="checkbox">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox">
+                <label for="telugu">Telugu</label>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+              <input type="checkbox" id="details_confirmation" required>
+              <label for="details_confirmation">I confirm that the details provided are true.</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: right;">
+                <h4>log into <a href="">ethnus</a> website</h4>
+            </td>
+        </tr>
+         <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Submit">
+          </td>
+        </tr>
+      </table>
+    </form>
+</div>
+
+</body>
+</html>

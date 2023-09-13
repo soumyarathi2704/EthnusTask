@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.header {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.input-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #FFA500; /* Light orange on hover */
+}
+
+.checkbox-container {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.remember-label {
+    font-size: 14px; /* Reduce text size */
+}
+
+.cancel-button {
+    background-color: #FF0000; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.forget-password {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forget-password a {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.clipartmax.com/png/small/186-1862528_hi-good-afternoon-guest-face-image-for-login-page.png" alt="Profile Image">
+        </div>
+        <form>
+            <div class="input-container">
+                <label for="username">Enter Username</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="input-container">
+                <label for="password">Enter Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="rememberMe" class="checkbox">
+                <label for="rememberMe" class="remember-label">Remember me</label>
+            </div>
+            <button class="login-button">Login</button>
+            <button class="cancel-button">Cancel</button>
+        </form>
+        <div class="forget-password">
+            <a href="#">Forget Password?</a>
+        </div>
+    </div>
+</body>
+</html>
